@@ -1,0 +1,11 @@
+
+<ion-slides [options]="{ slidesPerView: 1.3, loop: true, freeMode: true }">
+
+  <ion-slide *ngFor="let pelicula of peliculas">
+<!-- (click)="verDetalle( pelicula.id )" -->
+    <ion-card >
+      <img [src]="pelicula.backdrop_path | imagen">
+    </ion-card>
+
+  </ion-slide>
+</ion-slides>
